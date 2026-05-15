@@ -1,9 +1,8 @@
 <img width="701" height="478" alt="4afa77378cf49e3e79e6b036ae4fca4b" src="https://github.com/user-attachments/assets/ddc351d0-79a3-4cf4-923f-57026ce67dc1" />
-需自行添加apikey
-创建oss bucket
-oss https://oss.console.aliyun.com/overview
-https://platform.deepseek.com/api_keys
-https://smith.langchain.com
+# 需自行添加apikey 创建oss bucket
+*oss https://oss.console.aliyun.com/overview
+*https://platform.deepseek.com/api_keys
+*https://smith.langchain.com
 
 #  AI 智能厨师 Agent
 
