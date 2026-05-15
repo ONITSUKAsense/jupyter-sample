@@ -1,3 +1,10 @@
+<img width="701" height="478" alt="4afa77378cf49e3e79e6b036ae4fca4b" src="https://github.com/user-attachments/assets/ddc351d0-79a3-4cf4-923f-57026ce67dc1" />
+需自行添加apikey
+创建oss bucket
+oss https://oss.console.aliyun.com/overview
+https://platform.deepseek.com/api_keys
+https://smith.langchain.com
+
 #  AI 智能厨师 Agent
 
 基于大模型构建的 AI 智能厨师 Agent 系统，能够识别用户上传的食材图片或文本清单，自动分析食材种类、新鲜度及可用量，并结合联网搜索能力智能检索相关菜谱。系统通过对营养价值、制作难度、食材利用率等维度进行量化评分，生成结构化菜谱推荐方案，实现“从食材识别到智能做饭决策”的完整 AI Agent 工作流。
