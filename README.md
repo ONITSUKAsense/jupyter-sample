@@ -1,9 +1,3 @@
-<img width="701" height="478" alt="4afa77378cf49e3e79e6b036ae4fca4b" src="https://github.com/user-attachments/assets/ddc351d0-79a3-4cf4-923f-57026ce67dc1" />
-# 需自行添加apikey 创建oss bucket
-*oss https://oss.console.aliyun.com/overview
-*https://platform.deepseek.com/api_keys
-*https://smith.langchain.com
-
 #  AI 智能厨师 Agent
 
 基于大模型构建的 AI 智能厨师 Agent 系统，能够识别用户上传的食材图片或文本清单，自动分析食材种类、新鲜度及可用量，并结合联网搜索能力智能检索相关菜谱。系统通过对营养价值、制作难度、食材利用率等维度进行量化评分，生成结构化菜谱推荐方案，实现“从食材识别到智能做饭决策”的完整 AI Agent 工作流。
@@ -39,7 +33,7 @@
   * 食材利用率
   * 用户匹配度
 
-* **结构化菜谱生成**
+*  **结构化菜谱生成**
   自动输出：
 
   * 推荐理由
@@ -70,7 +64,7 @@ LLM 综合分析与推理
 
 ---
 
-# 🛠️ 技术架构
+#  技术架构
 
 ## 后端
 
@@ -97,7 +91,7 @@ LLM 综合分析与推理
 
 ---
 
-# 核心功能
+#  核心功能
 
 | 功能模块     | 描述           |
 | -------- | ------------ |
@@ -136,6 +130,52 @@ LLM 综合分析与推理
 预计时间：35分钟
 ```
 
+
+---
+
+#  环境配置
+
+项目运行前需要自行配置相关 API Key 与云存储服务。
+
+## 必需配置
+
+### 1. DeepSeek API Key
+
+用于大模型推理与 Agent 能力调用。
+
+* DeepSeek 平台：
+  [https://platform.deepseek.com/api_keys](https://platform.deepseek.com/api_keys)
+
+### 2. 阿里云 OSS Bucket
+
+用于图片上传与食材图片存储。
+
+* OSS 控制台：
+  [https://oss.console.aliyun.com/overview](https://oss.console.aliyun.com/overview)
+
+创建 Bucket 后需要配置：
+
+```env
+OSS_ACCESS_KEY_ID=your_key
+OSS_ACCESS_KEY_SECRET=your_secret
+OSS_BUCKET=your_bucket
+OSS_ENDPOINT=your_endpoint
+```
+
+### 3. LangSmith（可选）
+
+用于 LangChain Agent 调试、链路追踪与运行监控。
+
+* LangSmith：
+  [https://smith.langchain.com](https://smith.langchain.com)
+
+配置示例：
+
+```env
+LANGCHAIN_API_KEY=your_key
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_PROJECT=AI-Chef-Agent
+```
 
 ---
 
@@ -191,7 +231,7 @@ python app.py
 
 ---
 
-# 后续优化方向
+#  后续优化方向
 
 * [ ] 用户饮食偏好学习
 * [ ] 热量与减脂推荐
